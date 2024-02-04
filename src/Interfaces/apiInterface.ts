@@ -1,3 +1,6 @@
+export interface ErrorInfo {
+    message: string;
+  }
 export interface Value {
     id:                        string;
     contractualRules?:         ContractualRule[];
