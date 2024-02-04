@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import {API_BING_KEY} from '../utils/constants'; 
-import {Value}  from '../Interfaces/apiInterface';
+import {Value, ErrorInfo}  from '../Interfaces/apiInterface';
 
 export const useSearch = ({query}: {query: string}) => {
     const [searchResults, setSearchResults] = useState<Value[]>([]);
     const [isLoading, setIsLoading] = useState(false);
-    const [error, setError] = useState(null);
+    const [error, setError] = useState<ErrorInfo| null>(null);
   
     useEffect(() => {
       if (query) {
