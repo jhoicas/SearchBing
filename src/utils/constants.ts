@@ -1,0 +1,1 @@
+export const API_BING_KEY:string = '039f9b0865a24454a02ad688356fda24';

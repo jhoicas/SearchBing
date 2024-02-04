@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+}
+
+.search-bar {
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  color: #000;
+  padding: 10px 16px;
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    width: 16px;
+    height: 16px;
+    background-image: url("https://www.google.com/images/nav_logo176.png");
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+  }
+}
